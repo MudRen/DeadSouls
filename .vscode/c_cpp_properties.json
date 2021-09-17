@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "LPC",
+            "includePath": [
+                "${workspaceFolder}/lib/secure/include/",
+                "${workspaceFolder}/lib/include/"
+
+            ],
+            "forcedInclude": [
+                "${workspaceFolder}/lib/secure/include/global.h"
+            ],
+            "defines": [
+                "FLUFFOS",
+                "MUDOS",
+                "__PACKAGE_DB__"
+            ],
+            "cStandard": "c89",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
