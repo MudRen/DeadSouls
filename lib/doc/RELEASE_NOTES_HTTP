@@ -1,3 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 20 Sep 2021 15:05:17 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Last-Modified: Sun, 23 Aug 2020 16:24:26 GMT
+ETag: "1ed65-5ad8de74b70c5"
+Accept-Ranges: bytes
+Content-Length: 126309
+Connection: close
+
 ---- 3.9 ---
 - Released 2020-04-08
 - Fixed a problem that prevented objects from being in the inventory of /realms/ objects.

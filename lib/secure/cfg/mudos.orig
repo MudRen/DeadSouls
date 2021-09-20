@@ -1,3 +1,9 @@
+# DO NOT CHANGE THE "mudlib directory" LINE.
+# DOING SO WILL MAKE THE DRIVER FAIL TO RUN.
+# 
+# It's a linefeed problem we hope to fix soon.
+# in the meantime, you have to run the mud from c:\ds
+#
 ###############################################################################
 #              Customizable runtime config file for MudOS                     #
 # NOTE: All paths specified here are relative to the mudlib directory except  #
@@ -5,28 +11,28 @@
 # Lines beginning with a # or a newline are ignored.                          #
 ###############################################################################
 # name of this mud
-name : DeadSoulsNew
+name : DeadSoulsWin
 
 # port number to accept users on
 external_port_1 : telnet 6666
 
-# absolute pathname of mudlib
-mudlib directory : /CHANGE/THIS/PATH/lib
-
-# absolute pathname of driver/config dir
-binary directory : /CHANGE/THIS/PATH/bin
 
 # the address server is an external program that lets the mud translate
 # internet names to numbers (and vice versa).  select an unused port.
 address server ip : localhost
-address server port : 8099
+address server port : 9999
 
-# fd6 stuff is what allows portbind to work properly. If
-# you want to have the mud accept connections on port 23 but run
-# as non-root, you uncomment the two fd6 lines below and issue the
-# appropriate portbind command to start the mud.
-#fd6 port : 23
-#fd6 kind : telnet
+# absolute pathname of mudlib
+
+
+mudlib directory : lib
+
+
+
+# absolute pathname of driver/config dir
+
+binary directory : bin
+
 
 # debug.log and author/domain stats are stored here
 log directory : /log
@@ -58,16 +64,16 @@ global include file : <global.h>
 # like destructing the object. If the function isn't defined by the
 # object, then nothing will happen.
 # This time should be substantially longer than the swapping time.
-time to clean up : 2100000000
+time to clean up : 14400
 
 # How long time until an unused object is swapped out.
 # Machine with too many players and too little memory: 900 (15 minutes)
 # Machine with few players and lot of memory: 10000
 # Machine with infinite memory: 0 (never swap).
-time to swap : 0
+time to swap : 90000
 
 # How many seconds until an object is reset again.
-time to reset : 2100000000
+time to reset : 900000
 
 # Maximum number of bits in a bit field. They are stored in printable
 # strings, 6 bits per byte.
